@@ -13,8 +13,8 @@
  - birthplace (`String`)
  - myFirstProgrammingLanguage (`String`)
  */
-let gallonsRemainingInTank: Double
-let ageOfSpecimenInWeeks: Int
+var gallonsRemainingInTank: Double
+var ageOfSpecimenInWeeks: Int
 let birthplace: String
 let myFirstProgrammingLanguage: String
 //: ### Exercise 2

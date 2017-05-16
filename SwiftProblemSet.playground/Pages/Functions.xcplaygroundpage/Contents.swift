@@ -22,6 +22,7 @@ emojiLove(s1: "stringParameterOne", s2: "stringParameterTwo")
 
 //: ### Exercise 15
 //: The function `median` should take three `Int` parameters and return the `Int` value in the middle.
+
 func median(num1: Int, num2: Int, num3: Int) -> Int {
     
     // We declare median as an Int
@@ -30,11 +31,11 @@ func median(num1: Int, num2: Int, num3: Int) -> Int {
     // We create an Array of Ints where to store them
     let numbers: [Int] = [num1, num2, num3]
     
-    // We sort the Array of Ints
-    numbers.sorted {return $0 < $1}
+    // We store values in a separate array and then return the middle value
+    let sortedNumbers = numbers.sorted {return $0 < $1}
     
     // And return the second already ordered element
-    median = numbers[1]
+    median = sortedNumbers[1]
     
     return median
 }

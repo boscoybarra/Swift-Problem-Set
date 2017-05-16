@@ -94,9 +94,13 @@ func checkForRelease(bugs: Int, music: Bool, levels: Int) {
             
          if bugs > bugsAllowed {
             buggieGame()
-        } else if !music {
+        }
+        
+        if !music {
             noMusic()
-        } else if levels < minimumLevels {
+        }
+        
+        if levels < minimumLevels {
             lowLevel()
         }
     }
